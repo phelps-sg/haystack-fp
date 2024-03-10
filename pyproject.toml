@@ -1,0 +1,50 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.pytest.ini_optons]
+pythonpath = ["src"]
+
+[project]
+name = "haystack-fp"
+dynamic = ["version"]
+
+authors = [
+  { name="Steve Phelps", email="sphelps@sphelps.net" },
+]
+description = "Wrapper for haystack implementing functional-programming orchestration for LLMs"
+readme = "README.md"
+requires-python = ">=3.8.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/phelps-sg/haystack-fp"
+"Bug Tracker" = "https://github.com/phelps-sg/haystack-fp/issues"
+
+[tool.poetry]
+name = "haystack-fp"
+version = "0.0.0"
+description = "Wrapper for haystack implementing functional-programming orchestration for LLMs"
+authors = ["Steve Phelps <phelps.sg@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include="haystack-fp", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+haystack-ai = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-mock = "^3.11.1"
+pylint = "^3.0.1"
+flake8 = "*"
+black = {extras = ["d"], version = "^23.9.1"}
+mypy = "^1.6.0"
+pre-commit = "^3.5.0"
+[tool.poetry-dynamic-versioning]
+enable = true
