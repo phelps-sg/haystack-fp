@@ -1245,6 +1245,17 @@ files = [
 ]
 
 [[package]]
+name = "pfun"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.6,<4.0"
+files = [
+    {file = "pfun-0.1.0-py3-none-any.whl", hash = "sha256:930d86bd3e7a8310dfbdce9c9fe0c0030de5e8eaa8b2797e5ff8f2ced0e3e851"},
+    {file = "pfun-0.1.0.tar.gz", hash = "sha256:fb7c1012d2d81ca523baab9e16769f10629c59b0190df97b32f73594fa88d10e"},
+]
+
+[[package]]
 name = "platformdirs"
 version = "4.2.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
@@ -1881,4 +1892,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8.1"
-content-hash = "9a4589181ed0080a7ccad6907861208cb2a47d32d68d2c899c0d500ec15124d6"
+content-hash = "e4b507f6d55ac6407538aa09c11895568101ecdc53d6260b2fc3eed59297fbc4"

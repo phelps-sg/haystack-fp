@@ -37,6 +37,7 @@ packages = [{include="haystack-fp", from="src"}]
 [tool.poetry.dependencies]
 python = "^3.8.1"
 haystack-ai = "*"
+pfun = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"
